@@ -1,0 +1,819 @@
+<html data-blockbyte-bs-uid="12903"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="robots" content="noindex,nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="no-referrer">
+
+        
+        <style>.task-board.color-yellow, .task-summary-container.color-yellow, .color-picker-square.color-yellow {background-color: rgb(245, 247, 196);border-color: rgb(223, 227, 45)}td.color-yellow { background-color: rgb(245, 247, 196)}.table-list-row.color-yellow {border-left: 5px solid rgb(223, 227, 45)}.task-board.color-blue, .task-summary-container.color-blue, .color-picker-square.color-blue {background-color: rgb(219, 235, 255);border-color: rgb(168, 207, 255)}td.color-blue { background-color: rgb(219, 235, 255)}.table-list-row.color-blue {border-left: 5px solid rgb(168, 207, 255)}.task-board.color-green, .task-summary-container.color-green, .color-picker-square.color-green {background-color: rgb(189, 244, 203);border-color: rgb(74, 227, 113)}td.color-green { background-color: rgb(189, 244, 203)}.table-list-row.color-green {border-left: 5px solid rgb(74, 227, 113)}.task-board.color-purple, .task-summary-container.color-purple, .color-picker-square.color-purple {background-color: rgb(223, 176, 255);border-color: rgb(205, 133, 254)}td.color-purple { background-color: rgb(223, 176, 255)}.table-list-row.color-purple {border-left: 5px solid rgb(205, 133, 254)}.task-board.color-red, .task-summary-container.color-red, .color-picker-square.color-red {background-color: rgb(255, 187, 187);border-color: rgb(255, 151, 151)}td.color-red { background-color: rgb(255, 187, 187)}.table-list-row.color-red {border-left: 5px solid rgb(255, 151, 151)}.task-board.color-orange, .task-summary-container.color-orange, .color-picker-square.color-orange {background-color: rgb(255, 215, 179);border-color: rgb(255, 172, 98)}td.color-orange { background-color: rgb(255, 215, 179)}.table-list-row.color-orange {border-left: 5px solid rgb(255, 172, 98)}.task-board.color-grey, .task-summary-container.color-grey, .color-picker-square.color-grey {background-color: rgb(238, 238, 238);border-color: rgb(204, 204, 204)}td.color-grey { background-color: rgb(238, 238, 238)}.table-list-row.color-grey {border-left: 5px solid rgb(204, 204, 204)}.task-board.color-brown, .task-summary-container.color-brown, .color-picker-square.color-brown {background-color: #d7ccc8;border-color: #4e342e}td.color-brown { background-color: #d7ccc8}.table-list-row.color-brown {border-left: 5px solid #4e342e}.task-board.color-deep_orange, .task-summary-container.color-deep_orange, .color-picker-square.color-deep_orange {background-color: #ffab91;border-color: #e64a19}td.color-deep_orange { background-color: #ffab91}.table-list-row.color-deep_orange {border-left: 5px solid #e64a19}.task-board.color-dark_grey, .task-summary-container.color-dark_grey, .color-picker-square.color-dark_grey {background-color: #cfd8dc;border-color: #455a64}td.color-dark_grey { background-color: #cfd8dc}.table-list-row.color-dark_grey {border-left: 5px solid #455a64}.task-board.color-pink, .task-summary-container.color-pink, .color-picker-square.color-pink {background-color: #f48fb1;border-color: #d81b60}td.color-pink { background-color: #f48fb1}.table-list-row.color-pink {border-left: 5px solid #d81b60}.task-board.color-teal, .task-summary-container.color-teal, .color-picker-square.color-teal {background-color: #80cbc4;border-color: #00695c}td.color-teal { background-color: #80cbc4}.table-list-row.color-teal {border-left: 5px solid #00695c}.task-board.color-cyan, .task-summary-container.color-cyan, .color-picker-square.color-cyan {background-color: #b2ebf2;border-color: #00bcd4}td.color-cyan { background-color: #b2ebf2}.table-list-row.color-cyan {border-left: 5px solid #00bcd4}.task-board.color-lime, .task-summary-container.color-lime, .color-picker-square.color-lime {background-color: #e6ee9c;border-color: #afb42b}td.color-lime { background-color: #e6ee9c}.table-list-row.color-lime {border-left: 5px solid #afb42b}.task-board.color-light_green, .task-summary-container.color-light_green, .color-picker-square.color-light_green {background-color: #dcedc8;border-color: #689f38}td.color-light_green { background-color: #dcedc8}.table-list-row.color-light_green {border-left: 5px solid #689f38}.task-board.color-amber, .task-summary-container.color-amber, .color-picker-square.color-amber {background-color: #ffe082;border-color: #ffa000}td.color-amber { background-color: #ffe082}.table-list-row.color-amber {border-left: 5px solid #ffa000}</style>        <link rel="stylesheet" href="/assets/css/vendor.min.css?1511205774" media="screen">        <link rel="stylesheet" href="/assets/css/app.min.css?1511205774" media="screen">        
+                    <script type="text/javascript" src="/assets/js/vendor.min.js?1511205774"></script>            <script type="text/javascript" src="/assets/js/app.min.js?1511205774"></script>        
+        <link rel="stylesheet" href="/plugins/Calendar/Assets/fullcalendar.min.css?1491688497" media="screen"><link rel="stylesheet" href="/plugins/Chat/Assets/chat.css?1489107475" media="screen"><link rel="stylesheet" href="/p?" media="screen"><link rel="stylesheet" href="/plugins/Gantt/Assets/gantt.css?1491687700" media="screen">        <script type="text/javascript" src="/plugins/Calendar/Assets/moment.min.js?1491688497"></script><script type="text/javascript" src="/plugins/Calendar/Assets/fullcalendar.min.js?1491688497"></script><script type="text/javascript" src="/plugins/Calendar/Assets/locale-all.js?1491688497"></script><script type="text/javascript" src="/plugins/Calendar/Assets/calendar.js?1491688497"></script><script type="text/javascript" src="/plugins/Chat/Assets/chat.js?1489107475"></script><script type="text/javascript" src="/plugins/Gantt/Assets/chart.js?1491687700"></script><script type="text/javascript" src="/plugins/Gantt/Assets/gantt.js?1491687700"></script>
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/touch-icon-ipad-retina.png">
+
+        <title>
+                            Projects (16)                    </title>
+
+            <style></style><style class="blockbyte-bs-style" data-name="content">body>div#blockbyte-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,body>iframe#blockbyte-bs-overlay.blockbyte-bs-visible{opacity:1;pointer-events:auto}body.blockbyte-bs-noscroll{overflow:hidden !important}body>div#blockbyte-bs-indicator>div{position:absolute;transform:translate3d(-40px, 0, 0);top:0;left:0;width:40px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#blockbyte-bs-indicator>div>span{-webkit-mask:no-repeat center/32px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#blockbyte-bs-indicator[data-pos='right']{left:auto;right:0}body>div#blockbyte-bs-indicator[data-pos='right']>div{transform:translate3d(40px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#blockbyte-bs-indicator.blockbyte-bs-fullHeight>div{border-radius:0}body>div#blockbyte-bs-indicator.blockbyte-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb{height:100% !important;top:0 !important}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div{background:transparent}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#blockbyte-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(255,255,255,0.8) !important;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask{background:none !important}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover){width:calc(350px + 50px)}body>iframe#blockbyte-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+    <body data-status-url="/?controller=UserAjaxController&amp;action=status" data-login-url="/?controller=AuthController&amp;action=login" data-keyboard-shortcut-url="/?controller=DocumentationController&amp;action=shortcuts" data-timezone="Europe/Berlin" data-js-lang="en" data-js-date-format="yy/mm/dd" data-js-time-format="HH:mm" tcap-name="main">
+
+                    
+
+<header>
+    <div class="title-container">
+        <h1>
+    <span class="logo">
+        <a href="/?controller=DashboardController&amp;action=show" class="" title="Dashboard">K<span>B</span></a>    </span>
+    <span class="title">
+                    Projects (16)            </span>
+    </h1>
+    </div>
+    <div class="board-selector-container">
+                    <div class="js-select-dropdown-autocomplete-rendered" data-params="{&quot;name&quot;:&quot;boardId&quot;,&quot;placeholder&quot;:&quot;Display another project&quot;,&quot;items&quot;:{&quot;71&quot;:&quot;2017-4992 - BIS Datalake&quot;,&quot;75&quot;:&quot;2018-6063 AHMS EIS&quot;,&quot;84&quot;:&quot;AHMS&quot;,&quot;88&quot;:&quot;AHMS SD&quot;,&quot;87&quot;:&quot;AWS&quot;,&quot;97&quot;:&quot;Bombardier Transportation Business&quot;,&quot;86&quot;:&quot;Cloud DC&quot;,&quot;85&quot;:&quot;Data Lake&quot;,&quot;94&quot;:&quot;MWI&quot;,&quot;89&quot;:&quot;Neo4J&quot;,&quot;96&quot;:&quot;Polestar&quot;,&quot;39&quot;:&quot;RIM AWS&quot;,&quot;95&quot;:&quot;Serverless&quot;,&quot;90&quot;:&quot;data_catalog&quot;,&quot;81&quot;:&quot;master_data&quot;},&quot;redirect&quot;:{&quot;regex&quot;:&quot;PROJECT_ID&quot;,&quot;url&quot;:&quot;\/?controller=BoardViewController&amp;action=show&amp;project_id=PROJECT_ID&quot;},&quot;onFocus&quot;:[&quot;board.selector.open&quot;]}"><div class="select-dropdown-input-container"><input type="hidden" name="boardId" value=""><input type="text" placeholder="Display another project" class="select-dropdown-input"><i class="fa fa-chevron-down select-dropdown-chevron"></i><span class="select-loading-icon" style="display: none;"><i class="fa fa-spinner fa-pulse"></i></span></div></div>
+            </div>
+    <div class="menus-container">
+        <span class="notification">
+    <a href="/?controller=WebNotificationController&amp;action=show&amp;user_id=72" class="js-modal-medium" title="Unread notifications"><i class="fa fa-bell web-notification-icon fa-fw js-modal-medium" aria-hidden="true"></i></a></span>
+&nbsp;
+    <div class="dropdown header-creation-menu">
+        <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-plus fa-fw"></i><i class="fa fa-caret-down"></i></a>
+        <ul>
+                                        <li>
+                    <a href="/?controller=ProjectCreationController&amp;action=createPrivate" class="js-modal-medium" title=""><i class="fa fa-lock fa-fw js-modal-medium" aria-hidden="true"></i>New private project</a>                </li>
+                                </ul>
+    </div>
+&nbsp;<div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><div class="avatar avatar-20 avatar-inline"><div class="avatar-letter" style="background-color: rgb(31, 60, 147)" title="Wissing, Markus - mwissing">WM</div></div><i class="fa fa-caret-down"></i></a>
+    <ul>
+        <li class="no-hover"><strong>Wissing, Markus - mwissing</strong></li>
+        <li>
+            <a href="/?controller=DashboardController&amp;action=show&amp;user_id=72" class="" title=""><i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>My dashboard</a>        </li>
+        <li>
+            <a href="/?controller=UserViewController&amp;action=show&amp;user_id=72" class="" title=""><i class="fa fa-fw fa-home" aria-hidden="true"></i>My profile</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show" class="" title=""><i class="fa fa-fw fa-folder" aria-hidden="true"></i>Projects management</a>        </li>
+        
+        
+        <li>
+            <a href="/?controller=DocumentationController&amp;action=show" class="" title=""><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i>Documentation</a>        </li>
+                    <li>
+                <a href="/?controller=AuthController&amp;action=logout" class="" title=""><i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>Logout</a>            </li>
+            </ul>
+</div>
+    </div>
+</header>
+        <section class="page">
+                        <div class="page-header">
+    <ul>
+        
+        
+                    <li>
+                <a href="/?controller=ProjectCreationController&amp;action=createPrivate" class="js-modal-medium" title=""><i class="fa fa-lock fa-fw js-modal-medium" aria-hidden="true"></i>New private project</a>            </li>
+        
+        
+            </ul>
+</div>
+
+<div class="margin-bottom">
+    <form method="get" action="/" class="search">
+        <input type="hidden" name="controller" id="form-controller" value="ProjectListController">        <input type="hidden" name="action" id="form-action" value="show">        <input type="text" name="search" id="form-search" value="" class="" placeholder="Search">    </form>
+</div>
+
+    <div class="table-list">
+        <div class="table-list-header">
+    <div class="table-list-header-count">
+                    16 projects            </div>
+    <div class="table-list-header-menu">
+        <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>Sort <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.id&amp;direction=ASC" class="js-modal-replace" title="">Project ID</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.name&amp;direction=ASC" class="js-modal-replace" title="">Project name</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.is_active&amp;direction=ASC" class="js-modal-replace" title="">Status</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.start_date&amp;direction=ASC" class="js-modal-replace" title="">Start date</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.end_date&amp;direction=ASC" class="js-modal-replace" title="">End date</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.is_public&amp;direction=ASC" class="js-modal-replace" title="">Public</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show&amp;page=1&amp;order=projects.is_private&amp;direction=ASC" class="js-modal-replace" title="">Private</a>        </li>
+    </ul>
+</div>
+    </div>
+</div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#71 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=71" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=71" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=71" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=71" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=71&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=71&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=71" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=71" class="" title="">2017-4992 - BIS Datalake</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#59 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=59" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=59" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=59" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=59&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+            </ul>
+</div>
+    
+    <span class="table-list-title status-closed">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=59" class="" title="">2017-5916 Data Lake Enablement</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Spadini, Andrea - aspadini</li>
+        
+                    <li>Start date: 2017/02/01</li>
+        
+                    <li>End date: 2017/07/31</li>
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+            <span class="tooltip" title="<p><a href=&quot;https://wiki.transportation.bombardier.com/display/AR/Datacenter+extension+-+low+level+design&quot;>https://wiki.transportation.bombardier.com/display/AR/Datacenter+extension+-+low+level+design</a></p>">
+            <i class="fa fa-info-circle"></i>
+        </span>
+    
+            <i class="fa fa-ban fa-fw" aria-hidden="true" title="Closed"></i>Closed    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#75 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=75" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=75" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=75" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=75" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=75&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=75&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=75" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=75" class="" title="">2018-6063 AHMS EIS</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#84 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=84" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=84" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=84" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=84&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=84&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=84" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=84" class="" title="">AHMS</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#88 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=88" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=88" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=88" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=88" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=88&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=88&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=88" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=88" class="" title="">AHMS SD</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#87 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=87" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=87" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=87" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=87" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=87&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=87&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=87" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=87" class="" title="">AWS</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#97 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=97" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=97" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=97" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=97" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=97&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=97&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=97" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=97" class="" title="">Bombardier Transportation Business</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Siegel, Piotr - psiegel</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#86 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=86" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=86" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=86" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=86" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=86&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=86&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=86" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=86" class="" title="">Cloud DC</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#85 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=85" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=85" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=85" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=85" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=85&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=85&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=85" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=85" class="" title="">Data Lake</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#90 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=90" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=90" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=90" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=90" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=90&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=90&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=90" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=90" class="" title="">data_catalog</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#81 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=81" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=81" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=81" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=81" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=81&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=81&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=81" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=81" class="" title="">master_data</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#94 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=94" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=94" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=94" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=94" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=94&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=94&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=94" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=94" class="" title="">MWI</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Siegel, Piotr - psiegel</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#89 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=89" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=89" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=89" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=89" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=89&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=89&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=89" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=89" class="" title="">Neo4J</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#96 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=96" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=96" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=96" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=96" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=96&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=96&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=96" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=96" class="" title="">Polestar</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Siegel, Piotr - psiegel</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#39 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=39" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=39" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=39" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=39&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=39" class="" title="">RIM AWS</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Cloutier, Christian - ccloutie</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+            <span class="tooltip" title="<p><a href=&quot;https://wiki.transportation.bombardier.com/pages/viewpage.action?spaceKey=DS&amp;title=AWS+Enablement&quot;>https://wiki.transportation.bombardier.com/pages/viewpage.action?spaceKey=DS&amp;title=AWS+Enablement</a></p>">
+            <i class="fa fa-info-circle"></i>
+        </span>
+    
+    </div>
+            </div>
+                    <div class="table-list-row table-border-left">
+                <div>
+            <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><strong>#95 <i class="fa fa-caret-down"></i></strong></a>
+    <ul>
+        <li>
+            <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=95" class="" title=""><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>        </li>
+        <li>
+            <a href="/?controller=TaskListController&amp;action=show&amp;project_id=95" class="" title=""><i class="fa fa-fw fa-list" aria-hidden="true"></i>Listing</a>        </li>
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=95" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=95" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=95&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=95&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=95" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+            </ul>
+</div>
+    
+    <span class="table-list-title ">
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=95" class="" title="">Serverless</a>    </span>
+</div>
+
+                <div class="table-list-details table-list-details-with-icons">
+    <ul>
+                    <li>Siegel, Piotr - psiegel</li>
+        
+        
+            </ul>
+</div>
+                <div class="table-list-icons">
+    &nbsp;
+
+    
+    
+    
+    
+    </div>
+            </div>
+            </div>
+
+            </section>
+        <div class="js-chat-widget-rendered" data-params="{&quot;defaultTitle&quot;:&quot;Chat&quot;,&quot;interval&quot;:3,&quot;lastMessageId&quot;:22,&quot;showUrl&quot;:&quot;\/?controller=ChatController&amp;action=show&amp;plugin=Chat&quot;,&quot;checkUrl&quot;:&quot;\/?controller=ChatController&amp;action=check&amp;plugin=Chat&quot;,&quot;pingUrl&quot;:&quot;\/?controller=ChatController&amp;action=ping&amp;plugin=Chat&quot;,&quot;ackUrl&quot;:&quot;\/?controller=ChatController&amp;action=ack&amp;plugin=Chat&quot;}"><div class="chat-widget-minimized"><div class="chat-widget-toolbar"><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></div><a href="#">Chat</a></div></div>        
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><iframe id="blockbyte-bs-sidebar" class="notranslate" data-pos="right"></iframe><div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight blockbyte-bs-hover" style="width: 20px; height: 100%; top: 0%;"></div><div id="SL_balloon_obj" alt="0" style="display: block;"><div id="SL_button" class="SL_ImTranslatorLogo" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/imtranslator-s.png&quot;); display: none; opacity: 0; left: 90px; top: 833px; transition: visibility 2s ease 0s, opacity 2s linear 0s;"></div><div id="SL_shadow_translation_result2" style="display: none;"></div><div id="SL_shadow_translator" style="display: none;"><div id="SL_planshet"><div id="SL_arrow_up" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/up.png&quot;);"></div><div id="SL_Bproviders"></div><div id="SL_alert_bbl" style="display: none;"><div id="SLHKclose" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/delete.png&quot;);"></div><div id="SL_alert_cont"></div></div><div id="SL_TB"><table id="SL_tables" cellspacing="1"><tr><td class="SL_td" width="10%" align="right"><input id="SL_locer" type="checkbox" title="Lock-in language"></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_from" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/select.png&quot;) 100% 0px no-repeat rgb(255, 255, 255);"><option value="auto">Detect language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="ku">Kurdish</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="gd">Scots Gaelic</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td class="SL_td" width="3" align="center"><div id="SL_switch_b" title="Switch languages" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/switchb.png&quot;);"></div></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_to" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/select.png&quot;) 100% 0px no-repeat rgb(255, 255, 255);"><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option selected="selected" value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="ku">Kurdish</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="gd">Scots Gaelic</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td class="SL_td" width="5%" align="center"> </td><td class="SL_td" width="8%" align="center"><div id="SL_TTS_voice" title="undefined" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/ttsvoice.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_copy" title="Copy translation" class="SL_copy" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/copy.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_font_patch"></div><div id="SL_bbl_font" title="Font size" class="SL_bbl_font" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/font.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_help" title="Help" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bhelp.png&quot;);"></div></td><td class="SL_td" width="15%" align="right"><div id="SL_pin" class="SL_pin_off" title="Pin pop-up bubble" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/pin-on.png&quot;);"></div></td></tr></table></div></div><div id="SL_shadow_translation_result" style="visibility: visible;"></div><div id="SL_loading" class="SL_loading" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/loading.gif&quot;);"></div><div id="SL_player2"></div><div id="SL_alert100">Text-to-speech function is limited to 200 characters</div><div id="SL_Balloon_options" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bg3.png&quot;) rgb(255, 255, 255);"><div id="SL_arrow_down" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/down.png&quot;);"></div><table id="SL_tbl_opt" width="100%"><tr><td width="5%" align="center"><input id="SL_BBL_locer" type="checkbox" checked="1" title="Show Translator's button 3 second(s)"></td><td width="5%" align="left"><div id="SL_BBL_IMG" title="Show Translator's button 3 second(s)" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bbl-logo.png&quot;);"></div></td><td width="70%" align="center"><a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?bbl" target="_blank" class="SL_options" title="Show options">Options</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?hist" target="_blank" class="SL_options" title="Translation History">History</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?feed" target="_blank" class="SL_options" title="ImTranslator Feedback">Feedback</a> : <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=GD9D8CPW8HFA2" target="_blank" class="SL_options" title="Make a small contribution">Donate</a></td><td width="15%" align="right"><span id="SL_Balloon_Close" title="Close">Close</span></td></tr></table></div></div></div></body></html>
