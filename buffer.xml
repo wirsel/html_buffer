@@ -1,0 +1,1149 @@
+<body data-status-url="/?controller=UserAjaxController&amp;action=status" data-login-url="/?controller=AuthController&amp;action=login" data-keyboard-shortcut-url="/?controller=DocumentationController&amp;action=shortcuts" data-timezone="Europe/Berlin" data-js-lang="en" data-js-date-format="yy/mm/dd" data-js-time-format="HH:mm" data-gr-c-s-loaded="true" tcap-name="main">
+
+                    
+
+<header>
+    <div class="title-container">
+        <h1>
+    <span class="logo">
+        <a href="/?controller=DashboardController&amp;action=show" class="" title="Dashboard">K<span>B</span></a>    </span>
+    <span class="title">
+                    AHMS &gt; Swimlanes            </span>
+    </h1>
+    </div>
+    <div class="board-selector-container">
+                    <div class="js-select-dropdown-autocomplete-rendered" data-params="{&quot;name&quot;:&quot;boardId&quot;,&quot;placeholder&quot;:&quot;Display another project&quot;,&quot;items&quot;:{&quot;71&quot;:&quot;2017-4992 - BIS Datalake&quot;,&quot;75&quot;:&quot;2018-6063 AHMS EIS&quot;,&quot;88&quot;:&quot;AHMS SD&quot;,&quot;87&quot;:&quot;AWS&quot;,&quot;97&quot;:&quot;Bombardier Transportation Business&quot;,&quot;86&quot;:&quot;Cloud DC&quot;,&quot;85&quot;:&quot;Data Lake&quot;,&quot;102&quot;:&quot;Knowledge Graph&quot;,&quot;94&quot;:&quot;MWI&quot;,&quot;89&quot;:&quot;Neo4J&quot;,&quot;96&quot;:&quot;Polestar&quot;,&quot;39&quot;:&quot;RIM AWS&quot;,&quot;101&quot;:&quot;SAP Knowledge&quot;,&quot;95&quot;:&quot;Serverless&quot;,&quot;90&quot;:&quot;data_catalog&quot;,&quot;81&quot;:&quot;master_data&quot;},&quot;redirect&quot;:{&quot;regex&quot;:&quot;PROJECT_ID&quot;,&quot;url&quot;:&quot;\/?controller=BoardViewController&amp;action=show&amp;project_id=PROJECT_ID&quot;},&quot;onFocus&quot;:[&quot;board.selector.open&quot;]}"><div class="select-dropdown-input-container"><input type="hidden" name="boardId" value=""><input type="text" placeholder="Display another project" class="select-dropdown-input"><i class="fa fa-chevron-down select-dropdown-chevron"></i><span class="select-loading-icon" style="display: none;"><i class="fa fa-spinner fa-pulse"></i></span></div></div>
+            </div>
+    <div class="menus-container">
+        <span class="notification">
+    <a href="/?controller=WebNotificationController&amp;action=show&amp;user_id=72" class="js-modal-medium" title="Unread notifications"><i class="fa fa-bell web-notification-icon fa-fw js-modal-medium" aria-hidden="true"></i></a></span>
+&nbsp;
+    <div class="dropdown header-creation-menu">
+        <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-plus fa-fw"></i><i class="fa fa-caret-down"></i></a>
+        <ul>
+                                        <li>
+                    <a href="/?controller=ProjectCreationController&amp;action=createPrivate" class="js-modal-medium" title=""><i class="fa fa-lock fa-fw js-modal-medium" aria-hidden="true"></i>New private project</a>                </li>
+                                </ul>
+    </div>
+&nbsp;<div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><div class="avatar avatar-20 avatar-inline"><div class="avatar-letter" style="background-color: rgb(31, 60, 147)" title="Wissing, Markus - mwissing">WM</div></div><i class="fa fa-caret-down"></i></a>
+    <ul>
+        <li class="no-hover"><strong>Wissing, Markus - mwissing</strong></li>
+        <li>
+            <a href="/?controller=DashboardController&amp;action=show&amp;user_id=72" class="" title=""><i class="fa fa-fw fa-tachometer" aria-hidden="true"></i>My dashboard</a>        </li>
+        <li>
+            <a href="/?controller=UserViewController&amp;action=show&amp;user_id=72" class="" title=""><i class="fa fa-fw fa-home" aria-hidden="true"></i>My profile</a>        </li>
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show" class="" title=""><i class="fa fa-fw fa-folder" aria-hidden="true"></i>Projects management</a>        </li>
+        
+        
+        <li>
+            <a href="/?controller=DocumentationController&amp;action=show" class="" title=""><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i>Documentation</a>        </li>
+                    <li>
+                <a href="/?controller=AuthController&amp;action=logout" class="" title=""><i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>Logout</a>            </li>
+            </ul>
+</div>
+    </div>
+</header>
+        <section class="page">
+                        <section id="main">
+    <div class="project-header">
+    
+    <div class="dropdown-component">
+        <div class="dropdown">
+    <a href="#" class="dropdown-menu action-menu">Menu <i class="fa fa-caret-down"></i></a>
+    <ul>
+        
+                    <li>
+                <a href="/?controller=TaskCreationController&amp;action=show&amp;project_id=84" class="js-modal-large" title=""><i class="fa fa-plus fa-fw js-modal-large" aria-hidden="true"></i>Add a new task</a>            </li>
+        
+        <li>
+            <a href="/?controller=ActivityController&amp;action=project&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-dashboard fa-fw js-modal-medium" aria-hidden="true"></i>Activity</a>        </li>
+
+                    <li>
+                <a href="/?controller=CustomFilterController&amp;action=create&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-filter fa-fw js-modal-medium" aria-hidden="true"></i>Add custom filters</a>            </li>
+        
+        
+        <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=84&amp;plugin=Calendar" class="" title=""><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li>    <li>
+        <a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=84&amp;plugin=Gantt" class="" title=""><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a>    </li>
+
+                    <li>
+                <a href="/?controller=AnalyticController&amp;action=taskDistribution&amp;project_id=84" class="js-modal-large" title=""><i class="fa fa-line-chart fa-fw js-modal-large" aria-hidden="true"></i>Analytics</a>            </li>
+        
+                    <li>
+                <a href="/?controller=ExportController&amp;action=tasks&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-upload fa-fw js-modal-medium" aria-hidden="true"></i>Exports</a>            </li>
+        
+                    <li>
+                <a href="/?controller=TaskImportController&amp;action=show&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-download fa-fw js-modal-medium" aria-hidden="true"></i>Import tasks</a>            </li>
+        
+                    <li>
+                <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=84" class="" title=""><i class="fa fa-fw fa-cog" aria-hidden="true"></i>Settings</a>            </li>
+        
+        <li>
+            <a href="/?controller=ProjectListController&amp;action=show" class="" title=""><i class="fa fa-fw fa-folder" aria-hidden="true"></i>Manage projects</a>        </li>
+    </ul>
+</div>
+    </div>
+    <div class="views-switcher-component">
+        <ul class="views">
+    <li>
+        <a href="/?controller=ProjectOverviewController&amp;action=show&amp;project_id=84&amp;search=status%3Aopen" class="view-overview" title="Keyboard shortcut: &quot;v o&quot;"><i class="fa fa-fw fa-eye" aria-hidden="true"></i>Overview</a>    </li>
+    <li>
+        <a href="/?controller=BoardViewController&amp;action=show&amp;project_id=84&amp;search=status%3Aopen" class="view-board" title="Keyboard shortcut: &quot;v b&quot;"><i class="fa fa-fw fa-th" aria-hidden="true"></i>Board</a>    </li>
+    <li>
+        <a href="/?controller=TaskListController&amp;action=show&amp;project_id=84&amp;search=status%3Aopen" class="view-listing" title="Keyboard shortcut: &quot;v l&quot;"><i class="fa fa-fw fa-list" aria-hidden="true"></i>List</a>    </li>
+
+    <li>
+    <a href="/?controller=CalendarController&amp;action=project&amp;project_id=84&amp;search=status%3Aopen&amp;plugin=Calendar" class="view-calendar" title="Keyboard shortcut: &quot;v c&quot;"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Calendar</a></li><li>
+<a href="/?controller=TaskGanttController&amp;action=show&amp;project_id=84&amp;search=status%3Aopen&amp;plugin=Gantt" class="view-gantt" title="Keyboard shortcut: &quot;v g&quot;"><i class="fa fa-fw fa-sliders" aria-hidden="true"></i>Gantt</a></li>
+</ul>
+    </div>
+    <div class="filter-box-component">
+        <div class="filter-box">
+    <form method="get" action="/" class="search">
+        <input type="hidden" name="controller" id="form-controller" value="TaskListController">        <input type="hidden" name="action" id="form-action" value="show">        <input type="hidden" name="plugin" id="form-plugin" value="">        <input type="hidden" name="project_id" id="form-project_id" value="84">
+        <div class="input-addon">
+            <input type="text" name="search" id="form-search" value="status:open" class="input-addon-field" placeholder="Filter">            <div class="input-addon-item">
+                <div class="dropdown">
+    <a href="#" class="dropdown-menu dropdown-menu-link-icon" title="Default filters"><i class="fa fa-filter fa-fw"></i><i class="fa fa-caret-down"></i></a>
+    <ul>
+        <li><a href="#" class="filter-helper filter-reset" data-filter="status:open" title="Keyboard shortcut: &quot;r&quot;">Reset filters</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open assignee:me">My tasks</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open assignee:me due:tomorrow">My tasks due tomorrow</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open due:today">Tasks due today</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open due:tomorrow">Tasks due tomorrow</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open due:yesterday">Tasks due yesterday</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:closed">Closed tasks</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open">Open tasks</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open assignee:nobody">Not assigned</a></li>
+        <li><a href="#" class="filter-helper" data-filter="status:open category:none">No category</a></li>
+        <li>
+            <a href="/?controller=DocumentationController&amp;action=show&amp;file=search" class="" title="" target="_blank">View advanced search syntax</a>        </li>
+    </ul>
+</div>
+            </div>
+
+            
+                        <div class="input-addon-item">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon" title="User filters"><i class="fa fa-users fa-fw"></i> <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="filter-helper" data-unique-filter="assignee:nobody">Not assigned</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Bourdon, Patrick - pbourdon&quot;">Bourdon, Patrick - pbourdon</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Eric Webber&quot;">Eric Webber</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Kaehler, Mathias - mkaehler&quot;">Kaehler, Mathias - mkaehler</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Kumar, Mahindra - mahakuma&quot;">Kumar, Mahindra - mahakuma</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Lukaschewitsch, Michael - mlukasch&quot;">Lukaschewitsch, Michael - mlukasch</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Wissing, Markus - mwissing&quot;">Wissing, Markus - mwissing</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="assignee:&quot;Yannick Fecteau&quot;">Yannick Fecteau</a></li>
+                                            </ul>
+                </div>
+            </div>
+            
+                        <div class="input-addon-item">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon" title="Category filters"><i class="fa fa-tags fa-fw"></i><i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#" class="filter-helper" data-unique-filter="category:none">No category</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;aat_request&quot;">aat_request</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ad_ba/user account&quot;">ad_ba/user account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ad_bt/a-dash account&quot;">ad_bt/a-dash account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ad_bt/role assignment&quot;">ad_bt/role assignment</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ad_bt/user account&quot;">ad_bt/user account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/api&quot;">ahms/api</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/api/function&quot;">ahms/api/function</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/data pipeline&quot;">ahms/data pipeline</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/lambda&quot;">ahms/lambda</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages&quot;">ahms/messages</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category&quot;">ahms/messages/category</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type&quot;">ahms/messages/category/type</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type-eof &quot;">ahms/messages/category/type-eof </a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type-ifr&quot;">ahms/messages/category/type-ifr</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type/field &quot;">ahms/messages/category/type/field </a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type/field/transformation&quot;">ahms/messages/category/type/field/transformation</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type/key value&quot;">ahms/messages/category/type/key value</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/messages/category/type/transformation&quot;">ahms/messages/category/type/transformation</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/visualizations&quot;">ahms/visualizations</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/visualizations/field&quot;">ahms/visualizations/field</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/visualizations/field/parser&quot;">ahms/visualizations/field/parser</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/visualizations/report&quot;">ahms/visualizations/report</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ahms/visualizations/report/field&quot;">ahms/visualizations/report/field</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;allocation&quot;">allocation</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;allocation/confirmed&quot;">allocation/confirmed</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;allocation/to be confirmed&quot;">allocation/to be confirmed</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;allocation/vacation&quot;">allocation/vacation</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;artefact&quot;">artefact</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;artefact/architecture/diagram&quot;">artefact/architecture/diagram</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;atr_request&quot;">atr_request</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;bis_service&quot;">bis_service</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;dlk/account&quot;">dlk/account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;dlk/assignment&quot;">dlk/assignment</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;dlk/cfn&quot;">dlk/cfn</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;dlk/layer&quot;">dlk/layer</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;dlk/self_service&quot;">dlk/self_service</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;finance/purchasing_order&quot;">finance/purchasing_order</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;flow/account&quot;">flow/account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/account&quot;">gitlab/account</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/assignment&quot;">gitlab/assignment</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/file&quot;">gitlab/file</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/group&quot;">gitlab/group</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/group/project&quot;">gitlab/group/project</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/group/project/branch&quot;">gitlab/group/project/branch</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/group/project/branch/repository&quot;">gitlab/group/project/branch/repository</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;gitlab/repository&quot;">gitlab/repository</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;history&quot;">history</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;integration/interface&quot;">integration/interface</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;integration/network connection&quot;">integration/network connection</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;it_resource/bt_laptop&quot;">it_resource/bt_laptop</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;it_resource/bt_laptop/assignment&quot;">it_resource/bt_laptop/assignment</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;library&quot;">library</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;link&quot;">link</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;location/cloud region&quot;">location/cloud region</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;location/dc&quot;">location/dc</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;location/site&quot;">location/site</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;manual&quot;">manual</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;meeting&quot;">meeting</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;object&quot;">object</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;obsolete&quot;">obsolete</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;opportunity&quot;">opportunity</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company&quot;">orga/company</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company/business unit&quot;">orga/company/business unit</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company/competence_center&quot;">orga/company/competence_center</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company/department&quot;">orga/company/department</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company/team&quot;">orga/company/team</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/company/tower&quot;">orga/company/tower</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/person&quot;">orga/person</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/role&quot;">orga/role</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;orga/role/assignment&quot;">orga/role/assignment</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;prime_request&quot;">prime_request</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;process&quot;">process</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;product&quot;">product</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;project&quot;">project</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;project/wave&quot;">project/wave</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;report&quot;">report</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;solution/building block&quot;">solution/building block</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;solution/building block/component&quot;">solution/building block/component</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;solution/platform&quot;">solution/platform</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;swimlane&quot;">swimlane</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;tag&quot;">tag</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;term&quot;">term</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ticket&quot;">ticket</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ticket/yoda/change_request&quot;">ticket/yoda/change_request</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ticket/yoda/request_id&quot;">ticket/yoda/request_id</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;ticket/yoda/work_order&quot;">ticket/yoda/work_order</a></li>
+                                                    <li><a href="#" class="filter-helper" data-unique-filter="category:&quot;tool&quot;">tool</a></li>
+                                            </ul>
+                </div>
+            </div>
+                    </div>
+
+    </form>
+</div>
+    </div>
+
+    </div>
+    <section class="sidebar-container">
+
+        <div class="sidebar">
+    <ul>
+        <li>
+            <a href="/?controller=ProjectViewController&amp;action=show&amp;project_id=84" class="" title="">Summary</a>        </li>
+                <li>
+            <a href="/?controller=CustomFilterController&amp;action=index&amp;project_id=84" class="" title="">Custom filters</a>        </li>
+        
+                    <li>
+                <a href="/?controller=ProjectEditController&amp;action=show&amp;project_id=84" class="" title="">Edit project</a>            </li>
+            <li>
+                <a href="/?controller=ProjectPredefinedContentController&amp;action=show&amp;project_id=84" class="" title="">Predefined contents</a>            </li>
+            <li>
+                <a href="/?controller=ProjectViewController&amp;action=share&amp;project_id=84" class="" title="">Public access</a>            </li>
+            <li>
+                <a href="/?controller=ProjectViewController&amp;action=notifications&amp;project_id=84" class="" title="">Notifications</a>            </li>
+            <li>
+                <a href="/?controller=ProjectViewController&amp;action=integrations&amp;project_id=84" class="" title="">Integrations</a>            </li>
+            <li>
+                <a href="/?controller=ColumnController&amp;action=index&amp;project_id=84" class="" title="">Columns</a>            </li>
+            <li class="active">
+                <a href="/?controller=SwimlaneController&amp;action=index&amp;project_id=84" class="" title="">Swimlanes</a>            </li>
+            <li>
+                <a href="/?controller=CategoryController&amp;action=index&amp;project_id=84" class="" title="">Categories</a>            </li>
+            <li>
+                <a href="/?controller=ProjectTagController&amp;action=index&amp;project_id=84" class="" title="">Tags</a>            </li>
+                        <li>
+                <a href="/?controller=ProjectPermissionController&amp;action=index&amp;project_id=84" class="" title="">Permissions</a>            </li>
+            <li>
+                <a href="/?controller=ProjectRoleController&amp;action=show&amp;project_id=84" class="" title="">Custom roles</a>            </li>
+                        <li>
+                <a href="/?controller=ActionController&amp;action=index&amp;project_id=84" class="" title="">Automatic actions</a>            </li>
+            <li>
+                <a href="/?controller=ProjectViewController&amp;action=duplicate&amp;project_id=84" class="" title="">Duplicate</a>            </li>
+                                    <li>
+                    <a href="/?controller=ProjectStatusController&amp;action=confirmDisable&amp;project_id=84" class="js-modal-confirm" title="">Close this project</a>                            </li>
+                            <li>
+                    <a href="/?controller=ProjectStatusController&amp;action=confirmRemove&amp;project_id=84" class="js-modal-confirm" title="">Remove</a>                </li>
+                    
+            </ul>
+</div>
+
+        <div class="sidebar-content">
+            <div class="page-header">
+    <h2>Swimlanes</h2>
+    <ul>
+        <li>
+            <a href="/?controller=SwimlaneController&amp;action=create&amp;project_id=84" class="js-modal-medium" title=""><i class="fa fa-plus fa-fw js-modal-medium" aria-hidden="true"></i>Add a new swimlane</a>        </li>
+    </ul>
+</div>
+
+<h3>Active swimlanes</h3>
+
+    <table class="swimlanes-table table-striped table-scrolling" data-save-position-url="/?controller=SwimlaneController&amp;action=move&amp;project_id=84">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th class="column-15">Open tasks</th>
+            <th class="column-15">Closed tasks</th>
+        </tr>
+    </thead>
+    <tbody class="ui-sortable">
+                <tr data-swimlane-id="465">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=465" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=465&amp;csrf_token=66c662cb932d704625ead510c40423db75f1ee01a1854b8249f087697309" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=465" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                postponed tasks
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="404">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=404" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=404&amp;csrf_token=821c5c2208e77fe978a56d4f4f22bdde16071aee228997ab740d442bbdf6" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                ahms/visualizations
+                            </td>
+            <td>
+                60            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="401">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=401" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=401&amp;csrf_token=2c8cefe0cff948f17fea5526d0d601e6d009adc9dcd541f4f8d9f39f41b8" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                gitlab_items
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent elements in GitLab ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4564&quot;>#4564</a> ) . In Gitlab ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4564&quot;>#4564</a> ) configurations and source code for 'AHMS' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4829&quot;>#4829</a> ) are stored</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                42            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="396">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=396" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=396&amp;csrf_token=ed0dbf730096441577456f256dfd1b4e344964e4dcb228891419984569ec" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                ahms/messages
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane contain tasks that represent ahms message categories, ahms message types, key value pairs and columns used in these message types</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                45            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="342">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=342" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=342&amp;csrf_token=8b32695d5169e4c5e77427ec41d98de39a54df4ff696324167559e559d43" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                ahms/data pipelines
+                                    <span class="tooltip" title="<p>Kanban tasks within this swimlane ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5930&quot;>#5930</a>) represents a data pipeline in 'AHMS' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4829&quot;>#4829</a>). See also category 'ahms/data pipeline' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5931&quot;>#5931</a>)</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                4            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="341">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=341" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=341&amp;csrf_token=a812eec760d0e1318003b44f448d2eb5eaf8bc160d69138f7e1225a09187" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                ahms/lambda/items
+                                    <span class="tooltip" title="<p>Kanban tasks within this swimlane ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5927&quot;>#5927</a>) represents lambda functions with the 'AHMS' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4829&quot;>#4829</a>). See also category 'ahms/lambda' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5928&quot;>#5928</a>)</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                4            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="345">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=345" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=345&amp;csrf_token=f537a3c15b99b8a7226b4161fc4c914121660d5fcdd3687a5df6fec5a07e" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                ahms/api/items
+                            </td>
+            <td>
+                2            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="386">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=386" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=386&amp;csrf_token=96d78aadfac7e61d7653bff8c7aebf898ccb6d3561392e58ada8dbc89ccc" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                integration items
+                                    <span class="tooltip" title="<p>Kanban tasks within swimlane 'integration items' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6281&quot;>#6281</a>) represents interfaces ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6282&quot;>#6282</a>) or 'network connections' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=7274&quot;>#7274</a> ) required for integration purposes.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                12            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="387">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=387" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=387&amp;csrf_token=0be0437d75c37a1d74c255b0304075d101039fa92b04b90b4c0b4f075464" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=387" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                ahms/connections
+                                    <span class="tooltip" title="<p>Kanban tasks within this swimlane ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6305&quot;>#6305</a>) represents a technical connection between two solutions/components required for AHMS ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4829&quot;>#4829</a> ). See also category 'ahms/connection' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6306&quot;>#6306</a>)
+Caution: An ahms/interface ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6282&quot;>#6282</a>) is not the same. An interface ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6282&quot;>#6282</a>)  makes use of a connections ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6306&quot;>#6306</a>) to exchange information between two solutions.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="201">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=201" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=201&amp;csrf_token=dc7d8c97f16c5379ee8b606b58a8cf54eff287bc22dfc1bb9dcf802eb73f" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                categories
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent an entry in the category list. You can add explanations for which kind of Kanban task the category should be uses.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                14            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="203">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=203" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=203&amp;csrf_token=8f6f4ceb57537b7cc38b50bb0b6e22a91b80e69e9c8f94de1e900f0c6cc4" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=203" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                tags
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent tags used in this project</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="204">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=204" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=204&amp;csrf_token=ec40aff0ae85ab540809ac4891dd0230a9b97860afc4e16a02907d179d2b" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                swimlanes
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent the meaning of a swimlane. Describe here the purpose and usage of a dedicated swimlane</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                6            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="205">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=205" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=205&amp;csrf_token=20c7b9f8587c3175981510ffb2df5d3eb85466728cb726391b23bf544e47" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=205" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                locations
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent locations, like AWS regions or on prem data centers, or local sites from BA and BT</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="206">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=206" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=206&amp;csrf_token=70fbca16dae2dcbd4ec51cfc9ab8bc0dd758193336091c0f07dd6d985757" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                building_blocks
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent platforms, building blocks (bb) in platforms, components in bb. Naming convention for task title and task.Category see sub tasks. </p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                8            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="208">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=208" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=208&amp;csrf_token=6f83d14f9af74e266e7029a38c059a250097119794f02fb25726aec1335c" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=208" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                history
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent important milestones in the past</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="209">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=209" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=209&amp;csrf_token=e9570601e54bc2fa5599f9249d8b7752dffe46a8e4117e460b61ab8e604e" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                links
+                            </td>
+            <td>
+                1            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="210">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=210" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=210&amp;csrf_token=f9656cfee4125c80f16935e59e772b16aac139dc24a7343477957a9d69aa" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=210" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                objects
+                                    <span class="tooltip" title="<p>kanban task in this swimlane contain 'objects' that are relevant for any solution in BIS</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="211">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=211" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=211&amp;csrf_token=c857b58a9bf8366ea7712b2823bdc81f137ba0be70afb25883eaedc64c82" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                terms
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent a term or acronym or abbreviation. Title naming convention is 'term: &amp;lt;the term&amp;gt;'</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                13            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="212">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=212" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=212&amp;csrf_token=6a43b74c0ae3296e6bb991e4f6de326760f57c99bade0d65c6c6abbc4ded" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=212" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                processes
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane represent a process</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="213">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=213" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=213&amp;csrf_token=f62278bcb6b28e3157ab697f79b24a1ffedf27675c72e51289b37603dcac" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=213" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                active_directory_items
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane represent A) user account B) a-dash account or C) role assignments</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="214">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=214" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=214&amp;csrf_token=5255bf24ac111b61bc50d986e25bd514c71e5661d6a542f87591ca7b95c7" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=214" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                meetings
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane represent important meetings in the project. Tile convention: 'meeting: &amp;lt;yyymmdd&amp;gt;: &amp;lt;meeting name&amp;gt;</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="215">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=215" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=215&amp;csrf_token=95f99882c9fcfb194e335794a834535276b39b095647327553e8a3f2525a" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                reports
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent reports on Kanban, means a url to a kanban search with a set of filters</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                5            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="216">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=216" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=216&amp;csrf_token=e9f690390701c81edeb2bf571b420caf8fbd9801ab5bb4e7da5ecac818ea" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                artifacts
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane 'artifacts' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6206&quot;>#6206</a>) represent an artefact. They can be used to represent offers, proposals, desgn document ect.... See also category 'artefact/offer' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6205&quot;>#6205</a> ) 'artefact/sow' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=6262&quot;>#6262</a>)</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                8            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="217">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=217" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=217&amp;csrf_token=b21ffdb036fd7fe206b12443aa797d4f4574f5b29cabf3f654469d1c9c2b" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=217" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                products
+                                    <span class="tooltip" title="<p>Kanban task within this swimlane represent tools , products and solutions from IT vendors. Our BIS building blocks are based on these products</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="221">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=221" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=221&amp;csrf_token=ec0f36d24e144537c0eb90ebd163ebc13cf2366107c5dcb94c5840d056ad" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=221" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                atr_requets
+                                    <span class="tooltip" title="<p>Kanban task with this swimlane represent an ATR request. See also category 'atr_request'</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="222">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=222" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=222&amp;csrf_token=1fb9f6c4158a2df85a8e45cf41df89c52d90a3f17f9c875d4f8a53bf5e92" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=222" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                templates
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane represent templates. Purpose of a template is to describe how tasks in certain swimlanes should be created (e.g category to be uses, naming convention for title, ect..).  Users should create new tasks in kanban by creating a duplicate from the corresponding template.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="223">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=223" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=223&amp;csrf_token=ba85ce03f4cc51ebb448c7411b55838a8edfe4726baf2749c5384bac6369" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=223" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                bis_services
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane represent services in BIS ( #). A' new starter request' for example is a service.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="224">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=224" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=224&amp;csrf_token=a77abff8271b0bfdaebdebecffac12370f7511d887a6f35d676456902d04" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=224" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                it_resources
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane represent a concrete instance of an IT resource. Can be a 'BT laptop' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4730&quot;>#4730</a> ) or 'BA laptop' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=4715&quot;>#4715</a>), or a VM in BT / BA data center, or a EC2 machine in Amazon ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5185&quot;>#5185</a>), an 'EMR cluster' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5188&quot;>#5188</a> ) / 'Redshift cluster' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5186&quot;>#5186</a>), or a 'virtual laptop' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5179&quot;>#5179</a> ) in AWS based on AMZ Workspaces</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="225">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=225" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=225&amp;csrf_token=fe92bf774d26a85fb0e338c6f385aeacd74709e26e8170861ca8911f2402" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                            </ul>
+                </div>
+
+                obsolet
+                                    <span class="tooltip" title="<p>Kanban task in this swimlane have become obsolet. probably replaced by another task. YOu can keep the original task and link it to new one to keep track of history</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                2            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="228">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=228" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=228&amp;csrf_token=bcc3fb92f1563f6fafc8b59d37ac4772ecd0aff71604e9771a00a01c7907" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=228" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                manuals
+                                    <span class="tooltip" title="<p>Kanban tasks within this swimlane refer to user manuals</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="229">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=229" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=229&amp;csrf_token=4f58864097888865f7e25ebfe2836f8df6c05656fd270eb2b18b7e97e153" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=229" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                finance_items
+                                    <span class="tooltip" title="<p>Kanban tasks in this swimlane refer finance items. See category 'finance/purchasing_order' ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5627&quot;>#5627</a> )</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="230">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=230" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=230&amp;csrf_token=003b2c444e3e180103f687ef9c5cefdf922eb6a92f93cdfec547f8de3f57" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=230" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                opportunities
+                                    <span class="tooltip" title="<p>Kanban task within this swimlane represent opportunities. For example opportunities to use data lake in a business project.</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+                <tr data-swimlane-id="231">
+            <td>
+                                    <i class="fa fa-arrows-alt draggable-row-handle ui-sortable-handle" title="Change column position"></i>&nbsp;
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog ui-sortable-handle"></i><i class="fa fa-caret-down ui-sortable-handle"></i></a>
+                    <ul>
+                        <li>
+                            <a href="/?controller=SwimlaneController&amp;action=edit&amp;project_id=84&amp;swimlane_id=231" class="js-modal-medium" title=""><i class="fa fa-edit fa-fw js-modal-medium ui-sortable-handle" aria-hidden="true"></i>Edit</a>                        </li>
+                        <li>
+                                                            <a href="/?controller=SwimlaneController&amp;action=disable&amp;project_id=84&amp;swimlane_id=231&amp;csrf_token=71246dd64a1b6995887ecda759b0e959a9ae977cdd192f9aa117efdb6fb0" class="" title=""><i class="fa fa-fw fa-toggle-off ui-sortable-handle" aria-hidden="true"></i>Disable</a>                                                    </li>
+                                                    <li>
+                                <a href="/?controller=SwimlaneController&amp;action=confirm&amp;project_id=84&amp;swimlane_id=231" class="js-modal-confirm" title=""><i class="fa fa-trash-o fa-fw js-modal-confirm ui-sortable-handle" aria-hidden="true"></i>Remove</a>                            </li>
+                                            </ul>
+                </div>
+
+                tools
+                                    <span class="tooltip" title="<p>Kanban tasks within this swimlane ( <a href=&quot;/?controller=TaskViewController&amp;amp;action=show&amp;amp;task_id=5859&quot;>#5859</a> ) represent supporting tools and libraries</p>">
+                        <i class="fa fa-info-circle ui-sortable-handle"></i>
+                    </span>
+                            </td>
+            <td>
+                0            </td>
+            <td>
+                0            </td>
+        </tr>
+            </tbody>
+</table>
+
+        </div>
+    </section>
+</section>
+        </section>
+        <div class="js-chat-widget-rendered" data-params="{&quot;defaultTitle&quot;:&quot;Chat&quot;,&quot;interval&quot;:3,&quot;lastMessageId&quot;:23,&quot;showUrl&quot;:&quot;\/?controller=ChatController&amp;action=show&amp;plugin=Chat&quot;,&quot;checkUrl&quot;:&quot;\/?controller=ChatController&amp;action=check&amp;plugin=Chat&quot;,&quot;pingUrl&quot;:&quot;\/?controller=ChatController&amp;action=ping&amp;plugin=Chat&quot;,&quot;ackUrl&quot;:&quot;\/?controller=ChatController&amp;action=ack&amp;plugin=Chat&quot;}"><div class="chat-widget-minimized"><div class="chat-widget-toolbar"><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></div><a href="#">Chat</a></div></div>        
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"><div><div class="markdown"><p>Kanban tasks within this swimlane ( <a href="/?controller=TaskViewController&amp;action=show&amp;task_id=5927">#5927</a>) represents lambda functions with the 'AHMS' ( <a href="/?controller=TaskViewController&amp;action=show&amp;task_id=4829">#4829</a>). See also category 'ahms/lambda' ( <a href="/?controller=TaskViewController&amp;action=show&amp;task_id=5928">#5928</a>)</p></div></div></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><iframe id="blockbyte-bs-sidebar" class="notranslate" data-pos="right"></iframe><div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight" style="width: 20px; height: 100%; top: 0%;"></div><script type="text/javascript" class="skiptranslate">function googleTrButton6968288959959550() {
+  var el = new google.translate.TranslateElement({
+    includedLanguages: "en", 
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+    autoDisplay: false,
+    multilanguagePage: true,
+    floatPosition: 0
+  });
+  el.onTurnOffLanguageClick = function() {
+    var event = document.createEvent("Event");
+    event.initEvent("te_disable_lang", true, true);
+    document.body.dispatchEvent(event);
+  };
+  el.showBanner(true);
+}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTrButton6968288959959550&amp;hl=en"></script></body>
